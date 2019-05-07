@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="contact.css" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <nav>
+      <div class="name">
+        <a href="index.html" target="_blank">Nike Rasche</a>
+      </div>
+      <div class="navLinks">
+        <p>
+          <a href="projects.html" target="_blank">Projects</a>
+          <a href="about.html" target="_blank">About</a>
+          <a href="contact.html" target="_blank">Contact</a>
+        </p>
+      </div>
+    </nav>
+
+    <div class="contact-block">
+      <div class="form-wrapper">
+        <div class="form-block w-form">
+          <form method="POST" action="https://formspree.io/nikerasche@freenet.de"
+            id="email-form"
+            name="email-form"
+            data-name="Email Form"
+            class="form-margin"
+          >
+            <!-- <div data-ix="close-interaction" class="close-icon"></div> -->
+            <div class="title-contact">Let's get in touch</div>
+            <div id="contact">
+              <ul>
+              <li><span><i class="fas fa-phone"></i>0179.530 36 85</li>
+                <li><span  ><i class="fas fa-envelope"></i>nikerasche@freenet.de</li>
+                  <li><span ><i class="fas fa-location-arrow"></i>Berlin</li>
+            </ul>
+            </div>
+            <div class="names">
+              <p>
+                <input
+                  type="text"
+                  class="text-field w-input"
+                  maxlength="256"
+                  name="First-name"
+                  data-name="First name"
+                  placeholder="First name"
+                  id="First-name"
+                  required=""
+                />
+              </p>
+              <p>
+                <input
+                  type="text"
+                  class="text-field w-input"
+                  maxlength="256"
+                  name="Second-name"
+                  data-name="Second name"
+                  placeholder="Second name"
+                  id="Second-name"
+                  required=""
+                />
+              </p>
+            </div>
+            <input
+              type="email"
+              class="text-field email w-input"
+              maxlength="256"
+              name="Email-adress"
+              data-name="Email adress"
+              placeholder="Email adress"
+              id="Email-adress"
+              required=""
+            /><textarea
+              id="Project-description"
+              name="Project-description"
+              placeholder="Project description"
+              maxlength="5000"
+              data-name="Project description"
+              required=""
+              class="text-field message-field w-input"
+            ></textarea
+            >
+            <div class="action">
+              <input
+                type="submit"
+                value="Send Request"
+                data-wait="Please wait..."
+                class="submit-button w-button"
+              />
+              <a
+                target="_blank"
+                href="img/Portfolio_WebDev_NRasche.pdf"
+                class="submit-button secondary"
+                >Download resume</a
+              >
+            </div> 
+          </form>
+          <!-- <div class="w-form-done">
+            <div>Thank you! Your submission has been received!</div>
+          </div>
+          <div class="w-form-fail">
+            <div>Oops! Something went wrong while submitting the form</div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <footer>
+      <p>
+        <a href="https://github.com/Nira71?tab=repositories" target="_blank"
+          >Github</a
+        >
+        <a href="https://www.linkedin.com/in/nike-rasche/" target="_blank"
+          >Linkedin</a
+        >
+      </p>
+    </footer>
+     <!-- WRAPPER ENDING -->
+  </body>
+</html>

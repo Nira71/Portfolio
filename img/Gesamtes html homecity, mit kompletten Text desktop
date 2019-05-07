@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>munich</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Roboto");
+    </style>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <header>
+        <!-- <img
+          id="flag"
+          src="img/Muenchen_Kleines_Stadtwappen.svg"
+          alt="flag munich"
+        /> -->
+        <h1>Love Munich</h1>
+        <div class="navigation">
+          <ul>
+            <li>
+              <a
+                href="https://www.muenchen.de/int/en.html"
+                alt="munich city"
+                target="blank"
+                >City</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.munich.travel/en-gb/categories/discover/arts-culture"
+                alt="munich arts and culture"
+                target="blank"
+                >Arts &amp; Culture</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.atlasobscura.com/things-to-do/munich-germany"
+                alt="munich obscura"
+                target="blank"
+                >Unusual Attractions</a
+              >
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <hr />
+
+      <div class="intro">
+        <p>
+          Munich is the capital and most populous city of Bavaria, the second
+          most populous German federal state. With a population of around 1.5
+          million, it is the third-largest city in Germany, after Berlin and
+          Hamburg, as well as the 12th-largest city in the European Union. The
+          city's metropolitan region is home to 6 million people.Straddling the
+          banks of the River Isar north of the Bavarian Alps, it is the seat of
+          the Bavarian administrative region of Upper Bavaria, while being the
+          most densely populated municipality in Germany. <br />Munich is the
+          second-largest city in the Bavarian dialect area, after the Austrian
+          capital of Vienna.
+        </p>
+      </div>
+
+      <img
+        class="img-big"
+        src="img/munich_alps_big.jpg"
+        alt="Munich Frauenkirche"
+        title="Munich Frauenkirche"
+      />
+
+      <h2>World's most liveable city</h2>
+
+      <div class="outro">
+        <p>
+          Munich is a major centre of art, technology, finance, publishing,
+          culture, innovation, education, business, and tourism in Europe and
+          enjoys a very high standard and quality of living, reaching first in
+          Germany and third worldwide according to the 2018 Mercer survey, and
+          being rated the world's most liveable city by the Monocle's Quality of
+          Life Survey 2018. According to the Globalization and World Rankings
+          Research Institute Munich is considered an alpha-world city, as of
+          2015.
+        </p>
+      </div>
+
+      <img
+        class="img-small"
+        src="img/endless_stairs.jpg"
+        alt="stairs to nowhere munich"
+        title="Stairs to nowhere"
+        width="41%"
+      />
+      <img
+        class="img-small"
+        src="img/death_cutting.jpeg"
+        alt="death cutting life-thread"
+        title="Death cutting the life-thread"
+        width="41%"
+      />
+
+      <hr />
+
+      <footer>
+        &copy; Nike Rasche 2019
+      </footer>
+    </div>
+  </body>
+</html>
+
