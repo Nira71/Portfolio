@@ -6,8 +6,10 @@
   margin: 0;
 }
 body {
+  width: 100%;
   font-family: "Raleway", sans-serif;
   color: #fff;
+  overflow: hidden;
   background: linear-gradient(
     -45deg,
     #405acc,
@@ -56,11 +58,12 @@ body {
 
 /* WRAPPER */
 .wrapper {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100vh;
-  font-size: 16px;
+  font-size: 0.8em;
   color: white;
-  /* background-color: darkgrey; */
   line-height: 3em;
 }
 
@@ -69,8 +72,6 @@ nav,
 footer {
   width: 100%;
   height: 3em;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 0 50px;
 }
@@ -81,7 +82,7 @@ nav {
   position: absolute;
 }
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
 }
 .name a {
@@ -113,24 +114,32 @@ footer p {
   word-spacing: 25px;
 }
 
+/* INTRO */
+/* .intro {
+  width: 100%;
+  height: 4em;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  text-align: center;
+  margin-top: 60px;
+} */
+
 /* CONTENT */
 .container {
   display: flex;
-  flex-wrap: wrap;
-  height: 100%;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-content: center;
-  margin-bottom: 200px;
-  margin-bottom: 200px;
+  margin: 150px 20px;
 }
-.knowledge,
-#skills,
+#education,
 #experience,
-#hobbies,
-#references {
-  width: 15%;
+#skills,
+#references,
+#hobbies {
+  width: 20%;
   line-height: 1.5em;
-  margin-top: 200px;
+  margin: 5px;
+  padding-left: 60px;
 }
 hr {
   border: 1px solid pink;
@@ -142,14 +151,125 @@ hr {
 }
 .fa-html5 {
   margin-right: 0.2em !important;
+  margin-left: 0.2em;
 }
-.fab {
-  margin-left: 0.2em !important;
+.fa-js,
+.fa-node-js {
+  margin-left: 0.2em;
 }
-
+.fa-react {
+  margin-left: 0.1em;
+}
 .programming p {
   padding-bottom: 12px;
 }
 h4 {
   margin-bottom: 12px;
+}
+/* DESKTOP VERSION ENDING */
+
+/* MEDIA */
+@media screen and (max-width: 1100px) {
+  .wrapper {
+    height: 100%;
+  }
+  .container {
+    margin: 16px 20px;
+    margin-top: 150px;
+  }
+  .intro {
+    font-size: 1.2em;
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    height: 100%;
+    overflow: scroll;
+  }
+  .container {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    margin-top: 150px;
+  }
+  /* .intro {
+    font-size: 1em;
+    line-height: 1em;
+    text-align: center;
+    margin: 40px 40px 10px 25px;
+  } */
+  #education,
+  #experience,
+  #skills,
+  #references,
+  #hobbies {
+    min-width: 20%;
+    line-height: 1.5em;
+    margin: 5px;
+  }
+
+  footer {
+    position: relative;
+  }
+}
+@media screen and (max-width: 850px) {
+  nav {
+    display: flex;
+    background-color: rgb(50, 63, 146);
+    margin-bottom: 2em;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-between;
+    margin-top: 60px;
+  }
+  .intro {
+    display: none;
+  }
+  .programming {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 114%;
+  }
+  .programming h5 {
+    display: none;
+  }
+  #education,
+  #experience,
+  #skills,
+  #references,
+  #hobbies {
+    width: 50%;
+    line-height: 1.5em;
+    margin: 50px 0 0 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: rgb(50, 63, 146); */
+    margin-bottom: 2em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #experience p,
+  #skills p,
+  #references p,
+  #hobbies p {
+    display: none;
+    margin-top: 10px;
+  }
+  #skills hr:nth-of-type(2) {
+    display: none;
+  }
+  #education {
+    width: 90%;
+  }
 }
